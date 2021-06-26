@@ -2,7 +2,7 @@
 title: "Professional, Polished, Presentable"
 subtitle: "user!2021"
 author: "Dr. Avahi Cleesei"
-institute: "Bemaraha Universirty, Madagascar"
+institute: "Bemaraha University, Madagascar"
 date: "2021-07-07"
 output:
   xaringan::moon_reader:
