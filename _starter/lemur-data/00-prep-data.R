@@ -58,4 +58,5 @@ lemurs %>%
   group_by(common_name, name, dob, birth_type) %>%
   slice_max(age_at_wt_y) %>%
   ungroup() %>%
-  write_csv("lemurs.csv")
+  write_csv("lemurs.csv") %>%
+  write_rds("lemurs.rds", compress = "gz")
