@@ -1,0 +1,43 @@
+---
+title: "03 - xaringan extras"
+subtitle: "Professional, Polished, Presentable"
+author: "Dr. Avahi Cleesei"
+institute: "Bemaraha University, Madagascar"
+date: "2021-07-07"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=4, fig.retina=2, 
+  out.width="100%",
+  message = FALSE
+)
+```
+
+```{r lemur-weight}
+library(tidyverse)
+lemurs <- readRDS("lemurs.rds")
+
+lemurs %>%
+  filter(
+    common_name == "Ring-Tailed Lemur",
+    between(age_at_wt_y, 1, 5)
+  ) %>%
+  ggplot() +
+  aes(x = age_at_wt_y, y = weight) +
+  geom_point() +
+  labs(
+    x = "Age at Weight",
+    y = "Weight (g)",
+    title = "Weight Gain of Young Ring-Tailed Lemurs"
+  )
+```
