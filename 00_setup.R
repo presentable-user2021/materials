@@ -17,4 +17,5 @@ install.packages("xaringanthemer", dependencies = TRUE)
 # Extra Packages ----------------------------------------------------------
 install.packages("remotes")
 remotes::install_github("gadenbuie/xaringanExtra")
-remotes::install_github("jhelvy/xaringanBuilder")
+
+install.packages("fontawesome")
