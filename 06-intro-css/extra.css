@@ -1,9 +1,3 @@
 .big {
   font-size: 2em;
 }
-
-.bottom-right {
-  position: absolute;
-  bottom: 1em;
-  right: 2em;
-}
