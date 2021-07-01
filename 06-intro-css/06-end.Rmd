@@ -1,0 +1,83 @@
+---
+title: "06 - Introduction to CSS"
+subtitle: "Professional, Polished, Presentable"
+author: "Dr. Avahi Cleesei"
+institute: "Bemaraha University, Madagascar"
+date: "2021-07-07"
+output:
+  xaringan::moon_reader:
+    css: [xaringan-themer.css, extra.css]
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=4, fig.retina=2, 
+  out.width="100%",
+  message = FALSE
+)
+```
+
+```{css echo=FALSE}
+.big {
+  font-size: 2em;
+  color: CornFlowerBlue;
+}
+
+.fade {
+  opacity: 0.66;
+}
+```
+
+---
+class: center middle
+
+Lemurs are the .big[most endangered] mammals on Earth
+
+.fade[
+![A cute lemur](lemur.jpg)
+]
+
+
+
+
+
+
+---
+
+```{r lemur-weight, fig.show='hide'}
+library(tidyverse)
+lemurs <- readRDS("lemurs.rds")
+
+lemurs %>%
+  filter(
+    common_name == "Ring-Tailed Lemur",
+    between(age_at_wt_y, 1, 5)
+  ) %>%
+  ggplot() +
+  aes(x = age_at_wt_y, y = weight) +
+  geom_point() +
+  labs(
+    x = "Age at Weight",
+    y = "Weight (g)",
+    title = "Weight Gain of Young Ring-Tailed Lemurs"
+  )
+```
+
+.bottom-right[![Plot of lemur weights](06-end_files/figure-html/lemur-weight-1.png)]
+
+<style>
+.bottom-right {
+  position: absolute;
+  bottom: 1.5em;
+  right: 2em;
+  width: 450px;
+  height: 200px;
+  border: 2px solid gray;
+}
+</style>
