@@ -1,0 +1,61 @@
+---
+title: "06 - Introduction to CSS"
+subtitle: "Professional, Polished, Presentable"
+author: "Dr. Avahi Cleesei"
+institute: "Bemaraha University, Madagascar"
+date: "2021-07-07"
+output:
+  xaringan::moon_reader:
+    css: [xaringan-themer.css, extra.css]
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=4, fig.retina=2, 
+  out.width="100%",
+  message = FALSE
+)
+```
+
+---
+class: center middle
+
+Lemurs are the most endangered mammals on Earth
+
+![](lemur.jpg)
+
+
+
+
+
+
+---
+
+```{r lemur-weight, fig.show='hide'}
+library(tidyverse)
+lemurs <- readRDS("lemurs.rds")
+
+lemurs %>%
+  filter(
+    common_name == "Ring-Tailed Lemur",
+    between(age_at_wt_y, 1, 5)
+  ) %>%
+  ggplot() +
+  aes(x = age_at_wt_y, y = weight) +
+  geom_point() +
+  labs(
+    x = "Age at Weight",
+    y = "Weight (g)",
+    title = "Weight Gain of Young Ring-Tailed Lemurs"
+  )
+```
+
+.bottom-right[
+![Figure alt text](`r knitr::fig_chunk("lemur-weight", "png")`)
+]
