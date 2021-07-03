@@ -21,6 +21,8 @@ knitr::opts_chunk$set(
   out.width="100%",
   message = FALSE
 )
+
+# https://presentable-user2021.netlify.app/materials/act-02/03-xaringan-extras/#activity
 ```
 
 ```{r xaringanExtra, echo=FALSE}
