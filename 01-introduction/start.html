@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Professional, Polished, Presentable</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Dr. Avahi Cleesei" />
+    <meta name="date" content="2021-07-07" />
+    <script src="start_files/header-attrs/header-attrs.js"></script>
+    <link href="start_files/remark-css/default.css" rel="stylesheet" />
+    <link href="start_files/remark-css/default-fonts.css" rel="stylesheet" />
+    <link href="start_files/font-awesome/css/all.min.css" rel="stylesheet" />
+    <link href="start_files/font-awesome/css/v4-shims.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Professional, Polished, Presentable
+## user!2021
+### Dr. Avahi Cleesei
+### Bemaraha University, Madagascar
+### 2021-07-07
+
+---
+
+
+
+
+class: inverse, middle, center
+
+&lt;img style="border-radius: 50%;" 
+src="img/avahi-cleesei-01.jpg"
+alt=""
+width="250px"
+/&gt;
+
+# Dr. Avahi Cleesei 
+
+[<i class="fab fa-wikipedia-w" role="presentation" aria-label="wikipedia-w icon"></i> Wikipedia](https://en.wikipedia.org/wiki/Bemaraha_woolly_lemur)&lt;br/&gt;
+[<i class="fab fa-twitter" role="presentation" aria-label="twitter icon"></i> @DukeLemurCenter](https://twitter.com/DukeLemurCenter)&lt;br/&gt;
+[<i class="fa fa-paper-plane" role="presentation" aria-label="paper-plane icon"></i> avahi@cleesei.com](mailto:avahi@cleesei.com)&lt;br&gt;
+
+???
+Hello! My name is Avahi Cleesei and I'm a Bemahara woolly lemur working as a researcher at Bemahara University in Madagascar. I'm excited to be here at useR!2021 to present some data collected by the Duke Lemur Center.
+
+This slide uses:
+- the `inverse`, `middle`, and `center` slide classes
+- an image inserted with html
+
+---
+background-image: url(img/avahi-cleesei-02.jpg)
+background-position: right
+background-size: contain
+
+.pull-left[
+# The Avahi cleesei lemur
+
+&gt; A species of woolly lemur native to western Madagascar, named after [actor-comedian] John Cleese...mainly because of Cleese's fondness for lemurs...and his efforts at protecting and preserving them.
+
+&gt; This diurnal animal...has brown skin with white regions on the rear and inside of the thighs and has a short damp nose, large plate eyes, and ears which hardly stand out from the skin.
+
+
+.footnote[
+----
+- Original source: [Bemahara woolly lemur | Wikipedia](https://en.wikipedia.org/wiki/Bemaraha_woolly_lemur)
+- Illustration by [Rachel Hudson](https://lemur.duke.edu/100-lemurs/)
+] &lt;!--end of footnote--&gt;
+
+] &lt;!--end of pull left --&gt;
+
+???
+This slide uses:
+- a background image
+- the `.pull-left[]` class
+- a horizontal bar
+- the `.footnote[]` class
+- bullet list with `*`
+- quotes with `&gt;`
+---
+
+.left-column[
+# Making lists
+] &lt;!--end of left column --&gt;
+
+.right-column[
+Some facts about **lemurs**
+
+1. Lemurs are considered _living fossils_ because they provide key clues about primate evolution
+
+1. Lemurs are endemic to only Madagascar
+
+1. 95% of lemur species are at risk of extinction
+
+
+.footnote[
+----
+Original source: [Duke Lemur Center](https://lemur.duke.edu/protect/overview-madagascar-conservation-programs/)
+] &lt;!--end of footnote--&gt;
+
+] &lt;!--end of right column --&gt;
+
+???
+This slide uses:
+- numbered list with `1.`
+- a horizontal bar
+- the `.footnote[]` class
+
+---
+# Inserting images
+
+.pull-left[
+
+## Lemurs are endemic to only Madagascar
+
+.footnote[Image from [Odyssey Travels](https://www.odyssey-travels.com/site/assets/maps/positive/madagascar.png)] &lt;!--end of footnote --&gt;
+
+] &lt;!--end of pull left--&gt;
+
+.pull-right[
+
+![Illustrated map of Madagascar with the Bemahara National Park highlighted on the Western-Central region of the island](img/madagascar.png)
+
+] &lt;!--end of pull right --&gt;
+
+???
+This slide uses:
+- two different heading sizes: `#` and `##`
+- an image and accompanying alternative text inserted with `![]()`
+- `.pull-left[]` and `.pull-right[]` classes
+- the `.footnote[]` class
+
+---
+# Tables
+
+The `lemur_data` dataset contains life histories for a variety of lemurs housed at the [Duke Lemur Center](https://lemur.duke.edu/about/history-mission/) in North Carolina, USA.
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; common_name &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; name &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; current_resident &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; dob &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; birth_type &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; dod &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; age &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; weight &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; age_at_wt_y &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Black-And-White Ruffed Lemur &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Mercury &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; N &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1966-10-01 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; wild &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2006-02-09 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 39.39 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2900 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 39.38 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Red Ruffed Lemur &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Saturna &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; N &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1959-10-01 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; wild &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1997-04-07 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 37.54 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3620 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 37.50 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Black-And-White Ruffed Lemur &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Clotho &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; N &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1965-10-01 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; wild &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2001-05-30 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 35.68 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2430 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 35.68 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Aye-Aye &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Endora &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Y &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1983-12-04 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; wild &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; NA &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 35.20 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2540 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 35.12 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; White-Fronted Brown Lemur &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Deborah &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; N &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1980-05-18 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; captive &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2014-12-10 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 34.59 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1775 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 34.57 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Black Lemur &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Hesperus &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; N &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 1984-03-22 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; captive &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 2018-09-04 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 34.48 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2780 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 34.48 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+.footnote[
+Data source: [Duke Lemur Center Data | Kaggle](https://www.kaggle.com/jessemostipak/duke-lemur-center-data)
+] &lt;!--end of footnote--&gt;
+
+???
+This slide uses:
+- an R code chunk to produce the HTML table
+- the `.footnote[]` class
+
+---
+# Highlighting code
+
+`&gt; Inline code is differentiated by a monospace font face`
+
+You can highlight lines of code within code chunks using `#&lt;&lt;` which adds a yellow background:
+
+### Code
+
+```r
+lemurs %&gt;% filter(birth_type != "unknown") %&gt;%
+  ggplot(aes(x = dob, fill = birth_type)) +
+  geom_histogram() +              #&lt;&lt;
+  minimal_theme()
+```
+
+### Output
+
+
+```r
+lemurs %&gt;% filter(birth_type != "unknown") %&gt;%
+  ggplot(aes(x = dob, fill = birth_type)) +
+* geom_histogram() +
+  minimal_theme()
+```
+
+???
+This slide uses:
+- inline code highlighting with backticks ` `` `
+- a code chunk to produce a ggplot
+
+---
+
+
+```r
+lemurs %&gt;% filter(birth_type != "unknown") %&gt;%
+  ggplot(aes(x = dob, fill = birth_type)) +
+  geom_histogram() +
+  theme_minimal()
+```
+
+&lt;img src="start_files/figure-html/unnamed-chunk-2-1.png" title="Histogram of unique lemur births between 1975 and 2019 showing more births took place in captivity than in the wild, with most births concentrated between 1975 and 2000. Births in the wild peaked near 1985 at almost 300 births and again near 2012 at about 100 births. Births in captivity had a plateau between 1980 and 1985 at about 25 births" alt="Histogram of unique lemur births between 1975 and 2019 showing more births took place in captivity than in the wild, with most births concentrated between 1975 and 2000. Births in the wild peaked near 1985 at almost 300 births and again near 2012 at about 100 births. Births in captivity had a plateau between 1980 and 1985 at about 25 births" width="1008" /&gt;
+
+???
+This slide uses:
+- a code chunk to produce a ggplot
+- code chunk option `fig.height = 6.5` and `fig.width = 14` to control the figure height and width
+
+---
+class: middle, inverse
+
+.pull-left[
+# Thank you!
+&lt;br&gt;&lt;br&gt;
+## Dr. Avahi Cleesei  
+
+### Bemaraha University, Madagascar
+] &lt;!--end of pull left --&gt;
+
+.pull-right[
+.right[
+&lt;img style="border-radius: 50%;"
+src="img/avahi-cleesei-01.jpg"
+alt=""
+width="250px" /&gt;
+
+[<i class="fab fa-wikipedia-w" role="presentation" aria-label="wikipedia-w icon"></i> Wikipedia](https://en.wikipedia.org/wiki/Bemaraha_woolly_lemur)&lt;br/&gt;
+[<i class="fab fa-twitter" role="presentation" aria-label="twitter icon"></i> @DukeLemurCenter](https://twitter.com/DukeLemurCenter)&lt;br/&gt;
+[<i class="fa fa-paper-plane" role="presentation" aria-label="paper-plane icon"></i> avahi@cleesei.com](mailto:avahi@cleesei.com)
+] &lt;!--end of right --&gt;
+] &lt;!--end of pull right --&gt;
+
+???
+Thank you for joining me!
+You can find my contact information linked on this slide if you want to get in touch, and I'm happy to take any questions.
+
+This slide contains
+- `.pull-left[]` and `.pull-right[]` classes
+- `.right[]` class
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
