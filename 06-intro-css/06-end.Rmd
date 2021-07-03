@@ -6,7 +6,7 @@ institute: "Bemaraha University, Madagascar"
 date: "2021-07-07"
 output:
   xaringan::moon_reader:
-    css: [xaringan-themer.css, extra.css]
+    css: [xaringan-themer.css]
     nature:
       slideNumberFormat: "%current%"
       highlightStyle: github
@@ -23,7 +23,8 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{css echo=FALSE}
+```{css extra.css, echo=FALSE}
+/* ---- extra.css ---- */
 .big {
   font-size: 2em;
   color: CornFlowerBlue;
@@ -33,6 +34,10 @@ knitr::opts_chunk$set(
   opacity: 0.66;
 }
 ```
+
+class: center middle
+
+🗺 [Introduction to CSS Activity](https://presentable-user2021.netlify.app/materials/act-02/06-css-into/#activity)
 
 ---
 class: center middle
