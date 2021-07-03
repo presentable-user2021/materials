@@ -1,0 +1,98 @@
+---
+title: "09 - Design Components - Slide Templates"
+subtitle: "Professional, Polished, Presentable"
+author: "Dr. Avahi Cleesei"
+institute: "Bemaraha University, Madagascar"
+date: "2021-07-07"
+output:
+  xaringan::moon_reader:
+    css: [xaringan-themer.css, template.css]
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=4, fig.retina=2, 
+  out.width="100%",
+  message = FALSE
+)
+```
+
+class: center middle
+
+🗺 [Design Components - Slide Templates Activity](https://presentable-user2021.netlify.app/materials/act-03/09-design-components/#slide-templates)
+
+---
+layout: true
+name: image-sidebar-right
+class: image-sidebar-right
+background-size: 400px 681px
+background-position: right
+
+<div role="img" aria-label="Slide background shows: {{photo_alt}}"></div>
+
+.attribution[
+Photo by [{{photographer}}]({{photographer_url}})
+]
+
+<!-- see template.css chunk below -->
+
+---
+background-image: url(https://source.unsplash.com/83gB_koMuvA/400x681)
+photographer: Zdeněk Macháček
+photographer_url: https://unsplash.com/@zmachacek
+photo_alt: A lemur standing on a tree stump, looking directly at the camera.
+
+# Awesome Lemurs
+
+Lorem per erat vulputate iaculis eu in dui vestibulum.
+
+Amet fermentum sodales himenaeos nascetur lectus nunc hac nascetur auctor.
+
+Consectetur in accumsan neque libero magna leo felis viverra!
+
+Ipsum eros facilisi habitant habitant ultricies maecenas tellus parturient interdum potenti nisl.
+
+
+---
+layout: false
+class: center middle
+
+... other content ...
+
+---
+template: image-sidebar-right
+background-image: url(https://source.unsplash.com/tXz6g8JYYoI/400x681)
+photographer: Lidya Nada
+photographer_url: https://unsplash.com/@lidyanada
+photo_alt: A colorful image of a woman holding a bouquet of helium balloons in the shape of emoji against a brick wall painted in bright shades of blue, red, yellow and green.
+
+# This is fun!
+
+1. Sit mattis viverra condimentum orci nibh ultrices cubilia cum ornare eget dictumst?
+
+1. Consectetur inceptos iaculis montes erat pharetra etiam accumsan eleifend.
+
+1. Amet donec pharetra lacus aliquet massa cum magnis aliquam justo tortor hac!
+
+
+```{css template.css, echo=FALSE}
+/* ---- template.css ---- */
+.image-sidebar-right {
+  padding-right: 450px;
+}
+.image-sidebar-right .remark-slide-number {
+  color: white;
+}
+.image-sidebar-right .attribution {
+  position: absolute;
+  bottom: 0;
+  right: 410px;
+  font-size: 0.66em;
+}
+```

@@ -1,0 +1,41 @@
+---
+title: "09 - Design Components - Slide Templates"
+subtitle: "Professional, Polished, Presentable"
+author: "Dr. Avahi Cleesei"
+institute: "Bemaraha University, Madagascar"
+date: "2021-07-07"
+output:
+  xaringan::moon_reader:
+    css: [xaringan-themer.css, template.css]
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=4, fig.retina=2, 
+  out.width="100%",
+  message = FALSE
+)
+```
+
+class: center middle
+
+🗺 [Design Components - Slide Templates Activity](https://presentable-user2021.netlify.app/materials/act-03/09-design-components/#slide-templates)
+
+---
+class: image-sidebar-right
+
+# Awesome Lemurs
+
+Lorem per erat vulputate iaculis eu in dui vestibulum.
+
+Amet fermentum sodales himenaeos nascetur lectus nunc hac nascetur auctor.
+
+Consectetur in accumsan neque libero magna leo felis viverra!
+
+Ipsum eros facilisi habitant habitant ultricies maecenas tellus parturient interdum potenti nisl.

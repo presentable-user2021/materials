@@ -1,0 +1,46 @@
+---
+title: "09 - Design Components - Quote Slide"
+subtitle: "Professional, Polished, Presentable"
+author: "Dr. Avahi Cleesei"
+institute: "Bemaraha University, Madagascar"
+date: "2021-07-07"
+output:
+  xaringan::moon_reader:
+    css: [xaringan-themer.css, quote.css]
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=4, fig.retina=2, 
+  out.width="100%",
+  message = FALSE
+)
+```
+
+```{r xaringanthemer, echo=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#035AA6",
+  secondary_color = "#03A696",
+  colors = c(yellow = "#FFFC31", pink = "#E56399")
+)
+```
+
+class: center middle
+
+🗺 [Design Components - Quote Slide Activity](https://presentable-user2021.netlify.app/materials/act-03/09-design-components/#quote-slide)
+
+---
+class: quote middle
+
+Lemurs are the only non-human primates with blue eyes.
+
+.attribution[
+[Duke Lemur Center](https://lemur.duke.edu/discover/meet-the-lemurs/blue-eyed-black-lemur/)
+]
