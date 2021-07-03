@@ -1,0 +1,55 @@
+---
+title: "Professional, Polished, Presentable"
+subtitle: "user!2021"
+author: "Dr. Avahi Cleesei"
+institute: "Bemaraha University, Madagascar"
+date: "2021-07-07"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=4, fig.retina=2, 
+  out.width="100%",
+  message = FALSE
+)
+```
+
+```{r xaringanthemer, include=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#035AA6",  # default primary color in xaringanthemer.css
+  secondary_color = "#03A696" # default secondary color in xaringanthemer.css
+)
+```
+
+# Ring-tailed Lemurs
+
+.pull-left[
+
+- Among ring-tailed lemurs, single dominant females lead large groups of up to 30 lemurs.
+
+- When traveling as a group on the ground, lemurs hold their tails high like flags to keep the large group together.
+
+- The Duke Lemur Center provides more information [here](https://lemur.duke.edu/accordions/ring-tailed-lemurs-species-page/)
+
+] <!--end of pull left-->
+
+.pull-right[
+
+```{r, echo=FALSE, fig.alt=""}
+knitr::include_graphics("ring-tailed-lemur.jpg")
+```
+
+] <!--end of pull right-->
+
+.footnote[Illustration by [Rachel Hudson](https://lemur.duke.edu/100-lemurs/)]
