@@ -1,0 +1,115 @@
+---
+title: "07 - Accessibility with CSS & HTML"
+subtitle: "Professional, Polished, Presentable"
+author: "Dr. Avahi Cleesei"
+institute: "Bemaraha University, Madagascar"
+date: "2021-07-07"
+output:
+  xaringan::moon_reader:
+    css: [xaringan-themer.css, extra.css]
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=4, fig.retina=2, 
+  out.width="100%",
+  message = FALSE
+)
+```
+
+class: center, middle
+
+```{css extra.css, echo=FALSE}
+/* ---- extra.css ---- */
+a {
+  text-decoration: underline;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+```
+
+
+# 🗺 [Accessibility with CSS & HTML Activity](https://presentable-user2021.netlify.app/materials/act-03/07-accessibility-css-html/#activity)
+
+---
+
+## Common black lemurs are sexually dichromatic
+
+### This means females and males exhibit differently colored fur
+
+.pull-left[
+### Female
+<img 
+src="common-black-lemur-female.jpg" 
+alt="Female common black lemur with brown-orange fur and white ear tufts"
+width="325px"
+/>
+] <!--end of pull left-->
+
+.pull-right[
+### Male
+<img 
+src="common-black-lemur-male.jpg" 
+alt="Male common black lemur with rich black fur covering their entire body, and black ear tufts"
+width="325px"
+/>
+] <!--end of pull right-->
+
+---
+class: bottom
+background-image: url(common-black-lemur-male.jpg)
+background-size: cover
+
+# Adding<br>alt-text to<br>background<br>images
+
+<span role="img" aria-label="Male common black lemur with rich black fur covering their entire body, and black ear tufts"></span> 
+
+---
+
+# Styling links
+
+## This is an example of a link: [Duke Lemur Center | 100 Lemurs Days 15-30](https://lemur.duke.edu/100-lemurs-2/#day-eighteen)
+
+---
+
+# Transforming text to uppercase
+
+## Hello there, I'm transforming .upper[this text] to uppercase
+
+---
+
+# Using icons with context in mind
+
+.pull-left[
+### Using the `fa_i()` function provides icon information for screen readers
+
+R Code input:
+```r
+fontawesome::fa_i("twitter")
+```
+
+`r fontawesome::fa_i("twitter")` [@DukeLemurCenter](https://twitter.com/DukeLemurCenter)
+
+Screen reader: "Twitter icon, empty group. Link, @DukeLemurCenter"
+]
+
+.pull-right[
+### Using raw html without additional attributes requires additional context
+
+HTML code input:
+```html
+<i class="fab fa-twitter"></i>
+```
+
+<i class="fab fa-twitter"></i> Twitter: [@DukeLemurCenter](https://twitter.com/DukeLemurCenter)
+
+Screen reader: "Twitter. Link, @DukeLemurCenter" (i.e. the icon itself is skipped)
+]
