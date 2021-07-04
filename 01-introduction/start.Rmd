@@ -29,7 +29,7 @@ library(tidyverse)
 class: inverse, middle, center
 
 <img style="border-radius: 50%;" 
-src="img/avahi-cleesei-01.jpg"
+src="avahi-cleesei-01.jpg"
 alt=""
 width="250px"
 />
@@ -48,7 +48,7 @@ This slide uses:
 - an image inserted with html
 
 ---
-background-image: url(img/avahi-cleesei-02.jpg)
+background-image: url(avahi-cleesei-02.jpg)
 background-position: right
 background-size: contain
 
@@ -118,7 +118,7 @@ This slide uses:
 
 .pull-right[
 
-![Illustrated map of Madagascar with the Bemahara National Park highlighted on the Western-Central region of the island](img/madagascar.png)
+![Illustrated map of Madagascar with the Bemahara National Park highlighted on the Western-Central region of the island](madagascar.png)
 
 ] <!--end of pull right -->
 
@@ -135,7 +135,7 @@ This slide uses:
 The `lemur_data` dataset contains life histories for a variety of lemurs housed at the [Duke Lemur Center](https://lemur.duke.edu/about/history-mission/) in North Carolina, USA.
 
 ```{r lemur-births, echo=FALSE}
-lemurs <- readRDS("data/lemurs.rds")
+lemurs <- readRDS("lemurs.rds")
 
 lemurs %>%
   arrange(desc(age_at_wt_y)) %>%
@@ -210,7 +210,7 @@ class: middle, inverse
 .pull-right[
 .right[
 <img style="border-radius: 50%;"
-src="img/avahi-cleesei-01.jpg"
+src="avahi-cleesei-01.jpg"
 alt=""
 width="250px" />
 
