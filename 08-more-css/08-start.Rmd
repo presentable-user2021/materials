@@ -1,0 +1,75 @@
+---
+title: "08 - More CSS!"
+subtitle: "Professional, Polished, Presentable"
+author: "Dr. Avahi Cleesei"
+institute: "Bemaraha University, Madagascar"
+date: "2021-07-07"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=2,
+  out.width = "100%"
+)
+```
+
+```{r xaringanthemer, echo=FALSE}
+library(xaringanthemer)
+
+palette <- c(
+  orange      = "#fb5607",
+  pink        = "#ff006e",
+  blue_violet = "#8338ec",
+  zomp        = "#38A88E",
+  shadow      = "#87826E"
+)
+
+style_duo_accent(colors = palette)
+```
+
+class: center middle
+
+🗺  [More CSS](https://presentable-user2021.netlify.app/materials/act-03/08-more-css)
+
+---
+class: scientific-names
+
+# Woolly Lemurs
+
+.common-name[Woolly lemurs] have short woolly fur and take long naps to digest their food.
+
+There are **9** .species[species] in the .genus[Avahi] genus, here are **4** of them:
+
+.lemur.eastern[
+.common-name[Eastern] woolly lemur, .sci-name[.genus[Avahi] .species[laniger]]
+]
+
+.lemur.western[
+.common-name[Western] woolly lemur, .sci-name[.genus[Avahi] .species[occidentalis]]
+]
+
+.lemur.sambirano[
+.common-name[Sambirano] woolly lemur, .sci-name[.genus[Avahi] .species[unicolor]]
+]
+
+.lemur.bemaraha[
+.common-name[Bemaraha] woolly lemur, .sci-name[.genus[Avahi] .species[cleesei]]
+]
+
+<style>
+.common-name {
+  color: var(--orange);
+}
+.sci-name {
+  font-style: italic;
+}
+</style>
