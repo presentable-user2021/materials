@@ -45,3 +45,13 @@ usethis::use_course(
 
 [usethis]: https://usethis.r-lib.org
 
+
+## Duke Lemur Center Data
+
+In this course, we occasionally use data provided by the [Duke Lemur Center](https://lemur.duke.edu/). For more information, you may find the source data on the [DLC](https://lemur.duke.edu) webpage or in the following citation.
+
+> Zehr, SM, Roach RG, Haring D, Taylor J, Cameron FH, Yoder AD. Life history
+> profiles for 27 strepsirrhine primate taxa generated using captive data from
+> the Duke Lemur Center. Sci. Data 1:140019 doi: 10.1038/sdata.2014.19 (2014).
+
+The data files we used were prepared by [Jesse Mostipak](https://www.kaggle.com/jessemostipak) and shared on Kaggle at <https://www.kaggle.com/jessemostipak/duke-lemur-center-data>. The scripts used to simplify the dataset for this workshop is available in [this Kaggle R notebook](https://www.kaggle.com/grrrck/lemurs-simplified).
