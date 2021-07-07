@@ -55,3 +55,7 @@ In this course, we occasionally use data provided by the [Duke Lemur Center](htt
 > the Duke Lemur Center. Sci. Data 1:140019 doi: 10.1038/sdata.2014.19 (2014).
 
 The data files we used were prepared by [Jesse Mostipak](https://www.kaggle.com/jessemostipak) and shared on Kaggle at <https://www.kaggle.com/jessemostipak/duke-lemur-center-data>. The scripts used to simplify the dataset for this workshop is available in [this Kaggle R notebook](https://www.kaggle.com/grrrck/lemurs-simplified).
+
+## Lemur illustrations
+
+All lemur illustrations featured on the [tutorial website](https://presentable-user2021.netlify.app/materials/) and in the materials included within this repository were created by [Rachel Hudson](https://lemur.duke.edu/100-lemurs/).
