@@ -34,7 +34,7 @@ class: image-sidebar-right
 background-size: 400px 681px
 background-position: right
 
-<div role="img" aria-label="Slide background shows: {{photo_alt}}"></div>
+<span role="img" aria-label="Slide background shows: {{photo_alt}}"></span>
 
 .attribution[
 Photo by [{{photographer}}]({{photographer_url}})
